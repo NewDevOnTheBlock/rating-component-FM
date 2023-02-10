@@ -5,10 +5,6 @@
 
 /* body styles */
 body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
     background-color: hsl(216, 12%, 8%);
     font-family: "Overpass";
     font-size: 15px;
@@ -24,6 +20,7 @@ h3 {
 /* main containers */
 
 .container {
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -102,6 +99,6 @@ h3 {
 
 @media screen and (min-width: 375px) {
     .rating-container {
-        min-width: 325px;
+        width: 325px;
     }
 }
