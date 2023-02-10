@@ -1,29 +1,33 @@
 /* General Rules */
 
 /* get rid of default padding/margins */
-* {
-    margin: 0;
-    padding: 0;
-}
+
 
 /* body styles */
 body {
-    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
     background-color: hsl(216, 12%, 8%);
     font-family: "Overpass";
+    font-size: 15px;
 }
 
 /* specific element selectors */
 h3 {
+    margin: 16px 0 0 0;
+    padding: 0;
     color: white;
-    padding: 10px 0;
-}
-
-p {
-    font-size: 15px;
 }
 
 /* main containers */
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 .star-icon {
     display: flex;
@@ -37,25 +41,17 @@ p {
 
 /* rating-container details */
 
-.container {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
 .rating-container {
-    display: block;
+    display: flex;
     flex-direction: column;
-    max-width: 300px;
+    width: 300px;
     border-radius: 16px;
     padding: 24px;
-    margin: 20px;
     background-color: hsl(213, 19%, 18%);
 }
 
 .description {
-    padding: 10px 0;
     color: hsl(217, 12%, 63%);
 }
 
@@ -64,11 +60,11 @@ p {
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
-    padding: 16px 0;
+    padding: 8px 0 16px 0;
 }
 
 .ratings button:hover {
-    background-color: hsl(25, 100%, 64%);
+    background-color: hsl(211, 20%, 26%);
 }
 
 .rating {
@@ -95,7 +91,7 @@ p {
 }
 
 .submit-button:hover {
-    background-color: hsl(25, 100%, 64%);
+    background-color: hsl(25, 99%, 60%);
 }
 
 /* Thank-You container details */
@@ -104,3 +100,8 @@ p {
     display: none;
 }
 
+@media screen and (min-width: 375px) {
+    .rating-container {
+        min-width: 325px;
+    }
+}
